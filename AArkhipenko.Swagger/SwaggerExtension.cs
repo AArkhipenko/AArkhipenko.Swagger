@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 
+using CoreConsts = AArkhipenko.Core.Consts;
+
 namespace AArkhipenko.Swagger
 {
     /// <summary>
@@ -137,10 +139,10 @@ namespace AArkhipenko.Swagger
         /// </summary>
         private static string GetServiceName()
         {
-            var serviceName = Environment.GetEnvironmentVariable(Consts.ServiceName);
+            var serviceName = Environment.GetEnvironmentVariable(CoreConsts.ServiceName);
             if (string.IsNullOrEmpty(serviceName))
             {
-                throw new ApplicationException($"Не задана переменная коружения {Consts.ServiceName}");
+                throw new ApplicationException($"Не задана переменная коружения {CoreConsts.ServiceName}");
             }
 
             return serviceName;

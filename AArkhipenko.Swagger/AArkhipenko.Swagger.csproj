@@ -6,7 +6,7 @@
 		<Nullable>enable</Nullable>
 		<Title>AArkhipenko.Swagger</Title>
 		<PackageId>AArkhipenko.Swagger</PackageId>
-		<Version>0.1.0</Version>
+		<Version>7.0.0</Version>
 		<Authors>Arkhipenko Aleksey</Authors>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
@@ -15,6 +15,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="AArkhipenko.Core" Version="7.0.0" />
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
 		<PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="7.3.2" />
 		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.3.2" />
